@@ -8,8 +8,9 @@ export default function useCategories() {
   const dispatch = useAppDispatch();
   const categories = useAppSelector((state) => state.categories.records); // استدعاء البيانات من Redux
   console.log(categories);
+  const getCategory = Array.isArray(categories) ? categories : [];
 
-  const normalizedCategories = categories.map((category: any) => ({
+  const normalizedCategories = getCategory.map((category: any) => ({
     ...category,
   }));
   useEffect(() => {

@@ -41,10 +41,9 @@ const router = createBrowserRouter([
         path: "/categories",
         element: (
           <ProtectedRoute>
-            {" "}
             <Suspense fallback={<div>Loading..</div>}>
               <Categories />
-            </Suspense>{" "}
+            </Suspense>
           </ProtectedRoute>
         ),
       },
