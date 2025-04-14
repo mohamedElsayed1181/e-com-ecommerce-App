@@ -108,7 +108,7 @@ export default function Product({
             <span className="w-4 h-4 sm:w-5 sm:h-5 border-2 border-t-2 border-t-white border-blue-400 rounded-full animate-spin"></span>
           </span>
         ) : remainingQuantity === 0 ? (
-          "Out of stock"
+          "Out Of Stock"
         ) : (
           "Add to cart"
         )}
